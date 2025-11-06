@@ -57,7 +57,7 @@ QPushButton:hover {
 }</string>
          </property>
          <property name="text">
-          <string>Поиск</string>
+          <string>Установить</string>
          </property>
         </widget>
        </item>
@@ -92,7 +92,7 @@ QTabBar::tab:selected {
 }</string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="currentTab">
        <attribute name="title">
@@ -233,8 +233,26 @@ qproperty-alignment: AlignCenter;</string>
        <layout class="QHBoxLayout" name="horizontalLayout_3">
         <item>
          <widget class="QTableWidget" name="tableWidget">
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
           <property name="styleSheet">
-           <string notr="true">QTabWidget::pane {\n    border: 2px solid #C2C7CB;\n    background-color: rgba(255,255,255,0.9);\n    border-radius: 8px;\n}\nQTabBar::tab {\n    background-color: #E1E1E1;\n    padding: 8px 16px;\n    margin-right: 2px;\n    border-top-left-radius: 4px;\n    border-top-right-radius: 4px;\n}\nQTabBar::tab:selected {\n    background-color: rgba(255,255,255,0.9);\n    font-weight: bold;\n}</string>
+           <string notr="true">QTabWidget::pane {   
+border: 2px solid #C2C7CB;
+background-color: rgba(255,255,255,0.9);
+border-radius: 8px;
+}
+QTabBar::tab {
+background-color: #E1E1E1; 
+padding: 8px 16px;
+margin-right: 2px;
+ border-top-left-radius: 4px;
+ border-top-right-radius: 4px;
+}
+QTabBar::tab:selected {
+background-color: rgba(255,255,255,0.9);
+ font-weight: bold;
+}</string>
           </property>
           <row>
            <property name="text">
