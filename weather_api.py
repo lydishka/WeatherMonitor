@@ -48,6 +48,11 @@ def get_desc(data):
     return data["weather"][0]["description"]
 
 
+def get_weather_icon_url(self, icon_code):
+    """Получение URL иконки погоды"""
+    return f"http://openweathermap.org/img/wn/{icon_code}@2x.png"
+
+
 
 data = get_weather_five_days(city="Москва", api_key="2267c1b6f4893ab4e10c6cd8f2cc84db")
 print(data["list"][39]["weather"][0]["description"])

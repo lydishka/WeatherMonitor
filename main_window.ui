@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1110</width>
-    <height>787</height>
+    <height>832</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -92,7 +92,7 @@ QTabBar::tab:selected {
 }</string>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="currentTab">
        <attribute name="title">
@@ -232,38 +232,75 @@ qproperty-alignment: AlignCenter;</string>
        </attribute>
        <layout class="QHBoxLayout" name="horizontalLayout_3">
         <item>
-         <widget class="QTableWidget" name="forecastTable">
+         <widget class="QTableWidget" name="tableWidget">
           <property name="styleSheet">
-           <string notr="true">QTableWidget {
-    background-color: rgba(255,255,255,0.95);
-    alternate-background-color: #F8F9FA;
-    gridline-color: #DEE2E6;
-    border-radius: 6px;
-}
-QHeaderView::section {
-    background-color: #3498DB;
-    color: white;
-    padding: 8px;
-    font-weight: bold;
-}</string>
+           <string notr="true">QTabWidget::pane {\n    border: 2px solid #C2C7CB;\n    background-color: rgba(255,255,255,0.9);\n    border-radius: 8px;\n}\nQTabBar::tab {\n    background-color: #E1E1E1;\n    padding: 8px 16px;\n    margin-right: 2px;\n    border-top-left-radius: 4px;\n    border-top-right-radius: 4px;\n}\nQTabBar::tab:selected {\n    background-color: rgba(255,255,255,0.9);\n    font-weight: bold;\n}</string>
           </property>
-          <property name="rowCount">
-           <number>5</number>
-          </property>
-          <property name="columnCount">
-           <number>6</number>
-          </property>
-          <row/>
-          <row/>
-          <row/>
-          <row/>
-          <row/>
-          <column/>
-          <column/>
-          <column/>
-          <column/>
-          <column/>
-          <column/>
+          <row>
+           <property name="text">
+            <string>00:00</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>03:00</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>06:00</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>09:00</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>12:00</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>15:00</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>18:00</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>21:00</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </column>
          </widget>
         </item>
        </layout>
