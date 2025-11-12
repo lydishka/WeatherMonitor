@@ -10,5 +10,4 @@ class Cities(SqlAlchemyBase, SerializerMixin):
     id = sqlalchemy.Column(sqlalchemy.Integer,
                            primary_key=True,
                            autoincrement=True)
-    city_nane = sqlalchemy.Column(sqlalchemy.String)
-    city_owner = sqlalchemy.Column(sqlalchemy.Integer)
+    city_name = sqlalchemy.Column(sqlalchemy.String)
